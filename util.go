@@ -18,9 +18,9 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/spf13/afero"
-	"github.com/spf13/cast"
-	jww "github.com/spf13/jwalterweatherman"
+	"github.com/Beeketing/afero"
+	"github.com/Beeketing/cast"
+	jww "github.com/Beeketing/jwalterweatherman"
 )
 
 // ConfigParseError denotes failing to parse configuration file.

@@ -35,16 +35,16 @@ import (
 
 	yaml "gopkg.in/yaml.v2"
 
-	"github.com/fsnotify/fsnotify"
-	"github.com/hashicorp/hcl"
-	"github.com/hashicorp/hcl/hcl/printer"
-	"github.com/magiconair/properties"
-	"github.com/mitchellh/mapstructure"
-	toml "github.com/pelletier/go-toml"
-	"github.com/spf13/afero"
-	"github.com/spf13/cast"
-	jww "github.com/spf13/jwalterweatherman"
-	"github.com/spf13/pflag"
+	"github.com/Beeketing/afero"
+	"github.com/Beeketing/cast"
+	"github.com/Beeketing/fsnotify"
+	toml "github.com/Beeketing/go-toml"
+	"github.com/Beeketing/hcl"
+	"github.com/Beeketing/hcl/hcl/printer"
+	jww "github.com/Beeketing/jwalterweatherman"
+	"github.com/Beeketing/mapstructure"
+	"github.com/Beeketing/pflag"
+	"github.com/Beeketing/properties"
 )
 
 // ConfigMarshalError happens when failing to marshal the configuration.
@@ -1589,7 +1589,7 @@ func (v *Viper) insensitiviseMaps() {
 // Retrieve the first found remote configuration.
 func (v *Viper) getKeyValueConfig() error {
 	if RemoteConfig == nil {
-		return RemoteConfigError("Enable the remote features by doing a blank import of the viper/remote package: '_ github.com/spf13/viper/remote'")
+		return RemoteConfigError("Enable the remote features by doing a blank import of the viper/remote package: '_ github.com/Beeketing/viper/remote'")
 	}
 
 	for _, rp := range v.remoteProviders {
