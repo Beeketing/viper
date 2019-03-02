@@ -33,7 +33,7 @@ import (
 	"sync"
 	"time"
 
-	yaml "gopkg.in/yaml.v2"
+	yaml "gopkg.in/Beeketing/yaml.v2"
 
 	"github.com/Beeketing/afero"
 	"github.com/Beeketing/cast"
